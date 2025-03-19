@@ -8,6 +8,8 @@ const rot13 = require('./ciphers/rot13');
 const { vigenereEncrypt, vigenereDecrypt } = require('./ciphers/vigenere');
 const { caesarEncrypt, caesarDecrypt, bruteForceCaesar } = require('./ciphers/caesar');
 const { railFenceEncrypt, railFenceDecrypt } = require('./ciphers/rail_fence');
+const { morseEncode, morseDecode } = require('./ciphers/morse');
+const { affineEncrypt, affineDecrypt } = require('./ciphers/affine');
 
 
 module.exports = {
@@ -24,5 +26,9 @@ module.exports = {
   caesarDecrypt,
   bruteForceCaesar,
   railFenceEncrypt,
-  railFenceDecrypt
+  railFenceDecrypt,
+  morseEncode,
+  morseDecode,
+  affineEncrypt,
+  affineDecrypt
 };

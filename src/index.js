@@ -10,7 +10,7 @@ const { caesarEncrypt, caesarDecrypt, bruteForceCaesar } = require('./ciphers/ca
 const { railFenceEncrypt, railFenceDecrypt } = require('./ciphers/rail_fence');
 const { morseEncode, morseDecode } = require('./ciphers/morse');
 const { affineEncrypt, affineDecrypt } = require('./ciphers/affine');
-
+const xorCipher = require('./ciphers/xor');
 
 module.exports = {
   // 编码工具
@@ -30,5 +30,6 @@ module.exports = {
   morseEncode,
   morseDecode,
   affineEncrypt,
-  affineDecrypt
+  affineDecrypt,
+  xorCipher
 };

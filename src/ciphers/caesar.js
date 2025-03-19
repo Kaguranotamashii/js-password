@@ -32,7 +32,7 @@ function bruteForceCaesar(input) {
   for (let shift = 0; shift < 26; shift++) {
     results.push({
       shift,
-      text: caesarDecrypt(input, shift)
+      text: caesarEncrypt(input, shift)
     });
   }
   return results;

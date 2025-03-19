@@ -39,14 +39,17 @@ function morseDecode(input) {
     throw new Error('输入不能为空');
   }
 
-  return input.split(' ').map(code => {
-    if (code === '') return ' ';
-    const char = REVERSE_MORSE[code];
-    if (char === undefined) {
-      throw new Error(`无效的摩斯密码: ${code}`);
-    }
-    return char;
-  }).join('');
+  const words = input.split('   ');
+  return words.map(word => {
+    return word.split(' ').map(code => {
+      if (code === '') return '';
+      const char = REVERSE_MORSE[code];
+      if (char === undefined) {
+        throw new Error(`无效的摩斯密码: ${code}`);
+      }
+      return char;
+    }).join('');
+  }).join(' ');
 }
 
 module.exports = {

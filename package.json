@@ -17,8 +17,16 @@
     "xor",
     "caesar"
   ],
-  "author": "",
+  "author": "kaguranosoul",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaguranotamashii/js-password"
+  },
+  "bugs": {
+    "url": "https://github.com/Kaguranotamashii/js-password/issues"
+  },
+  "homepage": "https://github.com/Kaguranotamashii/js-password#readme",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
